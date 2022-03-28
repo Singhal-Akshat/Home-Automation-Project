@@ -9,10 +9,10 @@ const char PASS[]               = "WIFI PASSWORD";    //Enter WiFi password
 const char DEVICE_KEY[]         = "SECRET KEY";    //Enter Secret device password (Secret Key)
 
 
-#define PinOfRelay1 18 //D18 pin
-#define PinOfRelay2 19 //D19 Pin
-#define PinOfRelay3 21 //D21 pin
-#define PinOfRelay4 22 //D22 pin
+#define PinOfRelay1 19 //D19 pin
+#define PinOfRelay2 21 //D21 Pin
+#define PinOfRelay3 22 //D22 pin
+#define PinOfRelay4 23 //D23 pin
 
 
 #define switch1 13 //D13
