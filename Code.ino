@@ -133,17 +133,17 @@ void doThisOnSync(){
 void manual_control()
 { 
   // for switch 1
-  if(digitalRead(switch1) == LOW && switch1_state == LOW)
+  if(digitalRead(switch1) == LOW && switch1_state == LOW) //LOw = switch is on 
   {
-    digitalWrite(PinOfRelay1,LOW); // turn on switch 1 
+    digitalWrite(PinOfRelay1,LOW); // turn on switch 1 LOW -> high 
     statefortoggle1 = 1;
-    switch1_state = HIGH;
+    switch1_state = HIGH; // now switch is on
 
     switch_1 = statefortoggle1;
 
     Serial.println("Switch 1 is on.");
   }
-  else if(digitalRead(switch1)==HIGH && switch1_state == HIGH)
+  else if(digitalRead(switch1)==HIGH && switch1_state == HIGH) // high = switch is off
   {
     digitalWrite(PinOfRelay1,HIGH); // turn off switch
 
@@ -228,7 +228,7 @@ void changeswitch1()
 {
   if(switch_1 == 1)
   {
-    digitalWrite(PinOfRelay1,LOW);
+    digitalWrite(PinOfRelay1,LOW); // input low -> ouput High
     Serial.println("Load 1 is on");
     statefortoggle1 = 1;
   }
