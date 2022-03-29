@@ -1,3 +1,5 @@
+// video explanation of this code : https://youtu.be/XlopQSuE0UM
+// video on how to make this project : https://youtu.be/dWQlfOLJlcc
 #include<ArduinoIoTCloud.h>
 #include <Arduino_ConnectionHandler.h>
 
